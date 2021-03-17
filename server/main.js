@@ -12,6 +12,10 @@ Meteor.publish('test', function () {
 
     console.log('do something')
   })
+
+  this.onStop(() => {
+    comp.stop()
+  })
 })
 
 Meteor.methods({
