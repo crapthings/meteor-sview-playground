@@ -13,4 +13,6 @@ Meteor.startup(function () {
       Meteor.connection._stream.send('send back to server')
     }
   })
+
+  Meteor.subscribe('test')
 })
